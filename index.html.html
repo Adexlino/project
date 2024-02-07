@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>Ricky Online FoodShop</title>
+    <style>
+       body {
+      font-family: Arial, sans-serif;
+      background-color:rgb(189, 47, 177);
+    }
+    
+
+img{
+  height: 200px;
+  width: 200px;
+}
+
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+      background-color: rgb(18, 157, 221);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+    input[type="submit"] {
+      background-color: #e72727;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #8e3e56;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    marquee{
+      font-weight: bolder;
+      border: 3px ;
+      border-color: #e72727;
+    }
+    .ss{
+      border: 4px;
+      font-size: larger;
+    }
+    </style>  
+</head>
+<body>
+    <header>
+      <marquee behavior="loop" direction="left"> <p class="ss">Ricky Online FoodShop</p>   </marquee>
+      <img src="3.jpg">
+        <h1 id="top">Ricky Online FoodShop</h1>
+    </header>
+    <hr>
+        <ul id="navcontent">
+            <li><a href="#">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="contact.html">ContactUs</a></li>
+        </ul>
+    <div id="container1">
+        <div id="row1">Welcome to Online FoodShop</div>
+        <button class="btn">ORDER NOW</button>
+        <div id="container3">
+            <div id="row2"><button class="btn">Prices</button></div>
+            <div id="row3"><button class="btn">Specials</button></div>
+        </div>
+    </div>
+    <hr>
+    <h1 id="top3">Featured Products</h1>
+    <div id="container4">
+        <div id="row4"><button class="btn">ORDER NOW</button></div>
+        <div id="row5"><button class="btn">ORDER NOW</button></div>
+        <div id="row6"><button class="btn">ORDER NOW</button></div>
+    </div>
+    <footer>Copyright © 2023-2024 rickyOnlineFoodShop. All Rights Reserved.</footer>
+
+    <form action="/submit-form" method="POST"> 
+        <h1 style="color: #3e8e41;">login</h1>
+    
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea> 
+        <center><input type="submit" value="Submit"></center>
+      </form>
+</body>
+</html>
